@@ -1,5 +1,5 @@
 #java_util
-Some handy utilities for Java.
+Some useful utilities for Java.
 
 ###Including:
 - ArrayUtil: Some useful utilities for Java's arrary[], and some of them likes Python's list.
