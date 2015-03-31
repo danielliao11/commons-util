@@ -1,0 +1,28 @@
+#Mac Files
+.DS_Store
+
+# Eclipse Files
+.settings/
+.project
+.classpath
+.gradle/
+
+# Idea Files
+.idea/
+.iml/
+*.iml
+*.ipr
+*.iws
+
+# Package Files #
+*.jar
+*.war                                                                                                   
+*.ear
+
+# build dir
+/build
+/bin
+/target
+
+# 
+hs_err_pid*
