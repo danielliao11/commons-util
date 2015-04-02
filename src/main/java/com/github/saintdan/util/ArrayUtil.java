@@ -1,4 +1,4 @@
-package com.saintdan.util;
+package com.github.saintdan.util;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

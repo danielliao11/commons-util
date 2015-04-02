@@ -5,8 +5,8 @@ apply plugin: 'signing'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
-group = 'com.saintdan'
-version = '0.1.0-SNAPSHOT'
+group = 'com.github.saintdan'
+version = '0.0.1-SNAPSHOT'
 
 repositories {
     jcenter()
@@ -15,4 +15,68 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            // sign for pom
+            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+            // deploy url
+            repository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
+                authentication(userName: "saintdan", password: "icekid1412")
+            }
+            // construct pom.xml
+            pom.project {
+                name project.name
+                packaging 'jar'
+                description 'Some useful utilities for Java.'
+                url 'https://github.com/saintdan/java_util'
+
+                scm {
+                    url 'scm:github.com/saintdan/java_util.git'
+                    connection 'scm:github.com/saintdan/java_util.git'
+                    developerConnection 'github.com/saintdan/java_util.git'
+                }
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        distribution 'repo'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id 'saintdan'
+                        name 'Liao Yifan'
+                    }
+                }
+            }
+        }
+    }
+}
+
+//generate **.jar/**-javadoc.jar/**-sources.jar
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from 'build/docs/javadoc'
+}
+
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives jar
+    archives javadocJar
+    archives sourcesJar
+}
+
+//sign for all jars
+signing {
+    sign configurations.archives
 }
