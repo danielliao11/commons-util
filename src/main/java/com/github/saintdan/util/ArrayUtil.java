@@ -12,7 +12,6 @@ import java.util.Arrays;
 public final class ArrayUtil {
 
     private ArrayUtil() {
-        super();
     }
 
     /**

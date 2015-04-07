@@ -32,7 +32,6 @@ public final class MathUtil {
     private static final int ROUNDING_MODE = BigDecimal.ROUND_HALF_UP;
 
     private MathUtil() {
-        super();
     }
 
     // High-precision calculation

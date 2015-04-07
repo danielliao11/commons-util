@@ -21,7 +21,10 @@ gradle:
 
 ###Including:
 - ArrayUtil: Some useful array utilities for Java's arrary[], and some of them likes Python's list.
+- ConvertUtil: Some Conversation utilities.
+- DateFormat: Thread-Safe date formatter.
 - MathUtil: Some math utilities of high-precision calculation and max, min calculation.
+- StringUtil: Some String utilities.
 - Wait for other utilities.
 
 ###Version History:
@@ -29,3 +32,6 @@ gradle:
   - Initial version: 
     - ArrayUtil has been complete, and passed test.
     - MathUtil has been complete, and passed test.
+    - ConvertUtil has been complete, and passed test.
+    - DateFormat has been complete, and passed test.
+    - StringUtil : 20%.
