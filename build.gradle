@@ -1,20 +1,41 @@
+description = 'java_util'
+
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'maven'
 apply plugin: 'signing'
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
 group = 'com.github.saintdan'
 version = '0.0.1-SNAPSHOT'
 
 repositories {
-    jcenter()
     mavenCentral()
+    jcenter()
+}
+
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+compileTestJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+ext {
+    jacksonVersion = '2.5.2'
+    jacksonDataformatVersion = '2.4.0'
+
+    junitVersion = '4.12'
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: "com.fasterxml.jackson.core", name: "jackson-core", version: "${jacksonVersion}"
+    compile group: "com.fasterxml.jackson.core", name: "jackson-databind", version: "${jacksonVersion}"
+    compile group: "com.fasterxml.jackson.dataformat", name: "jackson-dataformat-xml", version: "${jacksonDataformatVersion}"
+
+    testCompile group: "junit", name: "junit", version: "${junitVersion}"
 }
 
 uploadArchives {

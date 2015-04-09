@@ -23,6 +23,7 @@ gradle:
 - ArrayUtil: Some useful array utilities for Java's arrary[], and some of them likes Python's list.
 - ConvertUtil: Some Conversation utilities.
 - DateFormat: Thread-Safe date formatter.
+- JsonUtil: Some useful json utilities, convert xxx to json.
 - MathUtil: Some math utilities of high-precision calculation and max, min calculation.
 - StringUtil: Some String utilities.
 - Wait for other utilities.
@@ -30,8 +31,9 @@ gradle:
 ###Version History:
 - 0.0.1-SNAPSHOT
   - Initial version: 
-    - ArrayUtil has been complete, and passed test.
-    - MathUtil has been complete, and passed test.
-    - ConvertUtil has been complete, and passed test.
-    - DateFormat has been complete, and passed test.
-    - StringUtil : 20%.
+    - ArrayUtil has been completed, and passed test.
+    - MathUtil has been completed, and passed test.
+    - ConvertUtil has been completed, and passed test.
+    - DateFormat has been completed, and passed test.
+    - JsonUtil has been completed, and passed test
+    - StringUtil : 40%.

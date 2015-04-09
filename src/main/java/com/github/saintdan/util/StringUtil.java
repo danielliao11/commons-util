@@ -1,5 +1,7 @@
 package com.github.saintdan.util;
 
+import java.nio.charset.Charset;
+
 /**
  * Some String utilities.
  * @author LiaoYifan
@@ -7,6 +9,58 @@ package com.github.saintdan.util;
  * @since JDK1.8
  */
 public class StringUtil {
+
+    /**
+     * 0~9 A~Z char array
+     */
+    private static final char[] CHARS = {'0', '1', '2', '3', '4', '5', '6',
+            '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+            'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W',
+            'X', 'Y', 'Z'};
+
+    /**
+     * Hex array
+     */
+    private final static char[] HEXARRAY = "0123456789ABCDEF".toCharArray();
+
+    /**
+     * Single byte char
+     */
+    private static final char[] SBC = {'1', '2', '3', '4', '5', '6', '7', '8',
+            '9', '0', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', 'a',
+            'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
+            'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A',
+            'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
+            'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '-',
+            '_', '=', '+', '\\', '|', '[', ']', ';', ':', '\'', '"', ',', '<',
+            '.', '>', '/', '?'};
+
+    /**
+     * Double byte char
+     */
+    private static final char[] DBC = {'１', '２', '３', '４', '５', '６', '７', '８',
+            '９', '０', '！', '＠', '＃', '＄', '％', '︿', '＆', '＊', '（', '）', 'ａ',
+            'ｂ', 'ｃ', 'ｄ', 'ｅ', 'ｆ', 'ｇ', 'ｈ', 'ｉ', 'ｊ', 'ｋ', 'ｌ', 'ｍ', 'ｎ',
+            'ｏ', 'ｐ', 'ｑ', 'ｒ', 'ｓ', 'ｔ', 'ｕ', 'ｖ', 'ｗ', 'ｘ', 'ｙ', 'ｚ', 'Ａ',
+            'Ｂ', 'Ｃ', 'Ｄ', 'Ｅ', 'Ｆ', 'Ｇ', 'Ｈ', 'Ｉ', 'Ｊ', 'Ｋ', 'Ｌ', 'Ｍ', 'Ｎ',
+            'Ｏ', 'Ｐ', 'Ｑ', 'Ｒ', 'Ｓ', 'Ｔ', 'Ｕ', 'Ｖ', 'Ｗ', 'Ｘ', 'Ｙ', 'Ｚ', '－',
+            '＿', '＝', '＋', '＼', '｜', '【', '】', '；', '：', '‘', '“', '，', '《',
+            '。', '》', '／', '？'};
+    /**
+     * WEEK DAYS
+     */
+    private static final String[] WEEKDAYS = {"SUNDAY", "MONDAY", "TUESDAY",
+            "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"};
+
+    /**
+     * Line separator
+     */
+    private static final String NEWLINE = String.format("%n");
+
+    /**
+     * The default charset of this Java virtual machine.
+     */
+    private static final Charset CHARSET = Charset.defaultCharset();
 
     /**
      * Blank validation
