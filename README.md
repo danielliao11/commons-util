@@ -21,8 +21,10 @@ gradle:
 
 ###Including:
 - ArrayUtil: Some useful array utilities for Java's arrary[], and some of them likes Python's list.
+- ByteUtil: Simple encode and decode.
 - ConvertUtil: Some Conversation utilities.
 - DateFormat: Thread-Safe date formatter.
+- EncryptionUtil: Encryption and decryption utilities.
 - InetAddressUtil: Get the host's IP or domain name.
 - IOUtil: Extends commons-io.
 - JsonUtil: Some useful json utilities, convert xxx to json.
@@ -41,3 +43,5 @@ gradle:
     - StringUtil : 80%.
     - InetAddressUtil has been completed, and passed test.
     - IOUtil has been completed, and passed test.
+    - ByteUtil has been completed, and passed test.
+    - EncryptionUtil has been completed, and passed test.

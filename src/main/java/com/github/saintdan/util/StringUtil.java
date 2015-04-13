@@ -93,54 +93,43 @@ public class StringUtil {
         return flag;
     }
 
-    public static boolean equals(final String str1, final String str2)
-    {
-        if (str1 == null || str2 == null)
-        {
+    public static boolean equals(final String str1, final String str2) {
+        if (str1 == null || str2 == null) {
             return str1 == str2;
         }
         return str1.equals(str2);
     }
 
-    public static boolean equalsIgnoreCase(final String str1, final String str2)
-    {
-        if (str1 == null || str2 == null)
-        {
+    public static boolean equalsIgnoreCase(final String str1, final String str2) {
+        if (str1 == null || str2 == null) {
             return str1 == str2;
         }
         return str1.equalsIgnoreCase(str2);
     }
 
-    public static boolean equalsWithTrim(final String str1, final String str2)
-    {
-        if (str1 == null || str2 == null)
-        {
+    public static boolean equalsWithTrim(final String str1, final String str2) {
+        if (str1 == null || str2 == null) {
             return str1 == str2;
         }
         return str1.trim().equals(str2.trim());
     }
 
-    public static boolean equalsIgnoreCaseWithTrim(final String str1, final String str2)
-    {
-        if (str1 == null || str2 == null)
-        {
+    public static boolean equalsIgnoreCaseWithTrim(final String str1, final String str2) {
+        if (str1 == null || str2 == null) {
             return str1 == str2;
         }
         return str1.trim().equalsIgnoreCase(str2.trim());
     }
 
-    public static boolean hasContent(final String s)
-    {
+    public static boolean hasContent(final String s) {
         return !(trimLength(s) == 0);    // faster than returning !isEmpty()
     }
 
-    public static int length(final String s)
-    {
+    public static int length(final String s) {
         return s == null ? 0 : s.length();
     }
 
-    public static int trimLength(final String s)
-    {
+    public static int trimLength(final String s) {
         return (s == null) ? 0 : s.trim().length();
     }
 }
