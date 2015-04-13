@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Thread-Safe date formatter.
  * Use ThreadLocal to ensure thread-safe.
- * @author LiaoYifan
+ * @author Liao Yifan
  * @date 4/2/15
  * @since JDK1.8
  */

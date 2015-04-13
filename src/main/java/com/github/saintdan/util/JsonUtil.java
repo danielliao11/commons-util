@@ -15,7 +15,7 @@ import java.util.Map;
 
 /**
  * Some useful json utilities base on jackson.
- * @author LiaoYifan
+ * @author Liao Yifan
  * @date 4/9/15
  * @since JDK1.8
  */

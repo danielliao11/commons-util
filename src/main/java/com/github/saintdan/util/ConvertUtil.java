@@ -25,7 +25,7 @@ import java.util.Date;
  *     Short t = convert(true, short.class);
  *     Long date = convert(calendar, long.class);
  *
- * @author LiaoYifan
+ * @author Liao Yifan
  * @date 4/2/15
  * @since JDK1.8
  */

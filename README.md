@@ -23,6 +23,8 @@ gradle:
 - ArrayUtil: Some useful array utilities for Java's arrary[], and some of them likes Python's list.
 - ConvertUtil: Some Conversation utilities.
 - DateFormat: Thread-Safe date formatter.
+- InetAddressUtil: Get the host's IP or domain name.
+- IOUtil: Extends commons-io.
 - JsonUtil: Some useful json utilities, convert xxx to json.
 - MathUtil: Some math utilities of high-precision calculation and max, min calculation.
 - StringUtil: Some String utilities.
@@ -35,5 +37,7 @@ gradle:
     - MathUtil has been completed, and passed test.
     - ConvertUtil has been completed, and passed test.
     - DateFormat has been completed, and passed test.
-    - JsonUtil has been completed, and passed test
-    - StringUtil : 40%.
+    - JsonUtil has been completed, and passed test.
+    - StringUtil : 80%.
+    - InetAddressUtil has been completed, and passed test.
+    - IOUtil has been completed, and passed test.
