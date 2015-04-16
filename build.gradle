@@ -3,14 +3,23 @@ description = 'java_util'
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'maven'
-apply plugin: 'signing'
 
-group = 'com.github.saintdan'
-version = '0.0.1-SNAPSHOT'
 
-repositories {
-    mavenCentral()
-    jcenter()
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+}
+
+allprojects {
+    version = VERSION_NAME
+    group = GROUP
+
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
 }
 
 compileJava {
@@ -42,66 +51,4 @@ dependencies {
     testCompile group: "junit", name: "junit", version: "${junitVersion}"
 }
 
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            // sign for pom
-            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
-
-            // deploy url
-            repository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
-                authentication(userName: "saintdan", password: "icekid1412")
-            }
-            // construct pom.xml
-            pom.project {
-                name project.name
-                packaging 'jar'
-                description 'Some useful utilities for Java.'
-                url 'https://github.com/saintdan/java_util'
-
-                scm {
-                    url 'scm:github.com/saintdan/java_util.git'
-                    connection 'scm:github.com/saintdan/java_util.git'
-                    developerConnection 'github.com/saintdan/java_util.git'
-                }
-
-                licenses {
-                    license {
-                        name 'The Apache Software License, Version 2.0'
-                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                        distribution 'repo'
-                    }
-                }
-
-                developers {
-                    developer {
-                        id 'saintdan'
-                        name 'Liao Yifan'
-                    }
-                }
-            }
-        }
-    }
-}
-
-//generate **.jar/**-javadoc.jar/**-sources.jar
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
-    from 'build/docs/javadoc'
-}
-
-task sourcesJar(type: Jar) {
-    classifier = 'sources'
-    from sourceSets.main.allSource
-}
-
-artifacts {
-    archives jar
-    archives javadocJar
-    archives sourcesJar
-}
-
-//sign for all jars
-signing {
-    sign configurations.archives
-}
+apply from: 'maven-push.gradle'

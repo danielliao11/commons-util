@@ -56,7 +56,7 @@ public class StringUtil extends StringUtils{
     }
 
     /**
-     *
+     * Phone number validation.
      * @param  number
      * @return boolean
      */

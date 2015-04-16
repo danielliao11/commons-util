@@ -9,14 +9,14 @@ maven:
 	<dependency>
     	<groupId>com.github.saintdan</groupId>
     	<artifactId>java_util</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
+    	<version>0.0.6-SNAPSHOT</version>
 	</dependency>
 ```
 
 gradle:
 
 ```
-	'com.github.saintdan:java_util:0.0.1-SNAPSHOT'
+	'com.github.saintdan:java_util:0.0.6-SNAPSHOT'
 ```
 
 ###Including:
