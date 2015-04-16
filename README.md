@@ -1,4 +1,5 @@
 #java_util
+<<<<<<< HEAD
 Some useful utilities for Java.
 
 ###Usage
@@ -56,3 +57,7 @@ gradle:
 -0.0.6-SNAPSHOT
     Some util extends org.apache.commons.lang3.
     - CharsetUtil : has been completed, and passed test.
+=======
+
+Some handy java utilities.
+>>>>>>> bfb938929343a3bb1bd94d218266424b17a7f261
