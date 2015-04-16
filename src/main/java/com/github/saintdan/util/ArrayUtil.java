@@ -1,18 +1,17 @@
-package com.saintdan.util;
+package com.github.saintdan.util;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /**
  * Productivity utilities for Java arrays
- * @author LiaoYifan
+ * @author Liao Yifan
  * @date 3/31/15
  * @since JDK1.8
  */
 public final class ArrayUtil {
 
     private ArrayUtil() {
-        super();
     }
 
     /**
