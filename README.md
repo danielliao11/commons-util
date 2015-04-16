@@ -53,6 +53,6 @@ gradle:
     - ByteUtil : has been completed, and passed test.
     - EncryptionUtil : has been completed, and passed test.
     - StringUtil : has been completed, and passed test.
--0.0.6-SNAPSHOT
+- 0.0.6-SNAPSHOT
     Some util extends org.apache.commons.lang3.
     - CharsetUtil : has been completed, and passed test.
