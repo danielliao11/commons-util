@@ -1,6 +1,6 @@
 package com.github.saintdan.util;
 
-import java.nio.charset.Charset;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Some String utilities.
@@ -8,7 +8,7 @@ import java.nio.charset.Charset;
  * @date 4/2/15
  * @since JDK1.8
  */
-public class StringUtil {
+public class StringUtil extends StringUtils{
 
     /**
      * Blank validation

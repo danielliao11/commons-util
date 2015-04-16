@@ -22,6 +22,7 @@ gradle:
 ###Including:
 - ArrayUtil: Some useful array utilities for Java's arrary[], and some of them likes Python's list.
 - ByteUtil: Simple encode and decode.
+- CharsetUtil: Some charset utilities. 
 - ConvertUtil: Some Conversation utilities.
 - DateFormat: Thread-Safe date formatter.
 - EncryptionUtil: Encryption and decryption utilities.
@@ -35,13 +36,23 @@ gradle:
 ###Version History:
 - 0.0.1-SNAPSHOT
   - Initial version: 
-    - ArrayUtil has been completed, and passed test.
-    - MathUtil has been completed, and passed test.
-    - ConvertUtil has been completed, and passed test.
-    - DateFormat has been completed, and passed test.
-    - JsonUtil has been completed, and passed test.
+    - ArrayUtil : has been completed, and passed test.
+    - MathUtil : has been completed, and passed test.
+- 0.0.2-SNAPSHOT    
+    - ConvertUtil : has been completed, and passed test.
+    - DateFormat : has been completed, and passed test.
+    - StringUtil : 20%.
+- 0.0.3-SNAPSHOT
+    - JsonUtil : has been completed, and passed test.
+    - StringUtil : 40%.
+- 0.0.4-SNAPSHOT
+    - InetAddressUtil : has been completed, and passed test.
+    - IOUtil : has been completed, and passed test.
     - StringUtil : 80%.
-    - InetAddressUtil has been completed, and passed test.
-    - IOUtil has been completed, and passed test.
-    - ByteUtil has been completed, and passed test.
-    - EncryptionUtil has been completed, and passed test.
+- 0.0.5-SNAPSHOT
+    - ByteUtil : has been completed, and passed test.
+    - EncryptionUtil : has been completed, and passed test.
+    - StringUtil : has been completed, and passed test.
+-0.0.6-SNAPSHOT
+    Some util extends org.apache.commons.lang3.
+    - CharsetUtil : has been completed, and passed test.
