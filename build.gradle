@@ -12,6 +12,13 @@ buildscript {
     }
 }
 
+allprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+}
+
 compileJava {
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
