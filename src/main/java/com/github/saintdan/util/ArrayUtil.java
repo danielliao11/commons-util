@@ -4,8 +4,9 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /**
- * Productivity utilities for Java arrays
- * @author Liao Yifan
+ * Productivity utilities for Java arrays.
+ *
+ * @author <a href="http://github.com/saintdan">Liao Yifan</a>
  * @date 3/31/15
  * @since JDK1.8
  */

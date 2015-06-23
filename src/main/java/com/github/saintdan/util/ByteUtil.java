@@ -2,7 +2,8 @@ package com.github.saintdan.util;
 
 /**
  * Simple encode and decode.
- * @author Liao Yifan
+ *
+ * @author <a href="http://github.com/saintdan">Liao Yifan</a>
  * @date 4/13/15
  * @since JDK1.8
  */

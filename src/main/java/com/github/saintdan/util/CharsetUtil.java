@@ -12,7 +12,8 @@ import java.util.Map;
 /**
  * Some charset utilities.
  * "Love your life, and keep away from charset trap."
- * @author Liao Yifan
+ *
+ * @author <a href="http://github.com/saintdan">Liao Yifan</a>
  * @date 4/16/15
  * @since JDK1.8
  */
