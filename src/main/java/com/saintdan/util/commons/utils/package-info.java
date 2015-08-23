@@ -19,4 +19,4 @@
  * @date 5/27/15
  * @since JDK1.8
  */
-package com.github.saintdan.util;
+package com.saintdan.util.commons.utils;

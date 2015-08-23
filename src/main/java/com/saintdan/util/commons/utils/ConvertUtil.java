@@ -1,4 +1,4 @@
-package com.github.saintdan.util;
+package com.saintdan.util.commons.utils;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

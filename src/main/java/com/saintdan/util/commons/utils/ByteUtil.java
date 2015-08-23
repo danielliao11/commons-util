@@ -1,4 +1,4 @@
-package com.github.saintdan.util;
+package com.saintdan.util.commons.utils;
 
 /**
  * Simple encode and decode.

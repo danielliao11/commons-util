@@ -1,4 +1,4 @@
-package com.github.saintdan.util;
+package com.saintdan.util.commons.utils;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

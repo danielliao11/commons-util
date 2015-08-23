@@ -1,4 +1,4 @@
-package com.github.saintdan.util;
+package com.saintdan.util.commons.utils;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;

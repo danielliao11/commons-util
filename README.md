@@ -1,25 +1,7 @@
-#java_util
-Some useful utilities for Java.
+# commons-util
+Some useful commons for Java.
 
-###Usage
-
-maven:
-
-```
-	<dependency>
-    	<groupId>com.github.saintdan</groupId>
-    	<artifactId>java_util</artifactId>
-    	<version>0.0.6-SNAPSHOT</version>
-	</dependency>
-```
-
-gradle:
-
-```
-	'com.github.saintdan:java_util:0.0.6-SNAPSHOT'
-```
-
-###Including:
+### Including:
 - ArrayUtil: Some useful array utilities for Java's arrary[], and some of them likes Python's list.
 - ByteUtil: Simple encode and decode.
 - CharsetUtil: Some charset utilities. 
@@ -33,7 +15,7 @@ gradle:
 - StringUtil: Some String utilities.
 - Wait for other utilities.
 
-###Version History:
+### Version History:
 - 0.0.1-SNAPSHOT
   - Initial version: 
     - ArrayUtil : has been completed, and passed test.
