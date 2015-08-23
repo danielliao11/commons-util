@@ -1,4 +1,4 @@
-package com.github.saintdan.util;
+package com.saintdan.util.commons.utils;
 
 import java.math.BigDecimal;
 
@@ -16,7 +16,7 @@ import java.math.BigDecimal;
  * Use the BigDecimal to do calculation.
  * And then, change the result to origin type.
  *
- * @author Liao Yifan
+ * @author <a href="http://github.com/saintdan">Liao Yifan</a>
  * @date 4/1/15
  * @since JDK1.8
  */

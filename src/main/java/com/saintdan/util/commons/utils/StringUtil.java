@@ -1,10 +1,11 @@
-package com.github.saintdan.util;
+package com.saintdan.util.commons.utils;
 
 import org.apache.commons.lang3.StringUtils;
 
 /**
  * Some String utilities.
- * @author Liao Yifan
+ *
+ * @author <a href="http://github.com/saintdan">Liao Yifan</a>
  * @date 4/2/15
  * @since JDK1.8
  */

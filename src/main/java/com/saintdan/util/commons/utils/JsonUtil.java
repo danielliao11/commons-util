@@ -1,4 +1,4 @@
-package com.github.saintdan.util;
+package com.saintdan.util.commons.utils;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;
@@ -15,7 +15,8 @@ import java.util.Map;
 
 /**
  * Some useful json utilities base on jackson.
- * @author Liao Yifan
+ *
+ * @author <a href="http://github.com/saintdan">Liao Yifan</a>
  * @date 4/9/15
  * @since JDK1.8
  */

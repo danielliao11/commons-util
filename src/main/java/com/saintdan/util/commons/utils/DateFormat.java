@@ -1,4 +1,4 @@
-package com.github.saintdan.util;
+package com.saintdan.util.commons.utils;
 
 import java.text.FieldPosition;
 import java.text.Format;
@@ -10,7 +10,8 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Thread-Safe date formatter.
  * Use ThreadLocal to ensure thread-safe.
- * @author Liao Yifan
+ *
+ * @author <a href="http://github.com/saintdan">Liao Yifan</a>
  * @date 4/2/15
  * @since JDK1.8
  */

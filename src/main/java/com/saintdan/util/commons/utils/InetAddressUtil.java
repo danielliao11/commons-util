@@ -1,11 +1,12 @@
-package com.github.saintdan.util;
+package com.saintdan.util.commons.utils;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
  * Get the host's IP or domain name.
- * @author Liao Yifan
+ *
+ * @author <a href="http://github.com/saintdan">Liao Yifan</a>
  * @date 4/13/15
  * @since JDK1.8
  */

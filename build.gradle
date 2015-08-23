@@ -13,9 +13,6 @@ buildscript {
 }
 
 allprojects {
-    version = VERSION_NAME
-    group = GROUP
-
     repositories {
         mavenCentral()
         jcenter()
@@ -51,4 +48,4 @@ dependencies {
     testCompile group: "junit", name: "junit", version: "${junitVersion}"
 }
 
-apply from: 'gradle_mvn_push_for_jar.gradle'
+apply from: 'gradle-mvn-push-for-jar.gradle'
