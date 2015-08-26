@@ -1,4 +1,4 @@
-description = 'java_util'
+description = 'commons_util'
 
 apply plugin: 'java'
 apply plugin: 'idea'
@@ -34,18 +34,21 @@ ext {
     jacksonDataformatVersion = '2.4.0'
     commonsIOVersion = '2.4'
     commonsLang3Version = '3.4'
+    logVersion = '1.2'
 
     junitVersion = '4.12'
 }
 
 dependencies {
-    compile group: "com.fasterxml.jackson.core", name: "jackson-core", version: "${jacksonVersion}"
-    compile group: "com.fasterxml.jackson.core", name: "jackson-databind", version: "${jacksonVersion}"
-    compile group: "com.fasterxml.jackson.dataformat", name: "jackson-dataformat-xml", version: "${jacksonDataformatVersion}"
-    compile group: "commons-io", name: "commons-io", version: "${commonsIOVersion}"
-    compile group: "org.apache.commons", name: "commons-lang3", version: "${commonsLang3Version}"
+    compile "com.fasterxml.jackson.core:jackson-core:${jacksonVersion}"
+    compile "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
+    compile "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:${jacksonDataformatVersion}"
+    compile "commons-io:commons-io:${commonsIOVersion}"
+    compile "org.apache.commons:commons-lang3:${commonsLang3Version}"
+    compile "commons-logging:commons-logging:${logVersion}"
 
-    testCompile group: "junit", name: "junit", version: "${junitVersion}"
+
+    testCompile "junit:junit:${junitVersion}"
 }
 
 apply from: 'gradle-mvn-push-for-jar.gradle'

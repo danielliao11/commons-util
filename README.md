@@ -38,3 +38,5 @@ Some useful commons for Java.
 - 0.0.6-SNAPSHOT
     <br/>Some util extends org.apache.commons.lang3.
     - CharsetUtil : has been completed, and passed test.
+- 0.0.7-SNAPSHOT
+    - LogUtils: has been completed, and passed test.
