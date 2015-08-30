@@ -35,6 +35,7 @@ ext {
     commonsIOVersion = '2.4'
     commonsLang3Version = '3.4'
     logVersion = '1.2'
+    codecVersion = '1.10'
 
     junitVersion = '4.12'
 }
@@ -46,6 +47,7 @@ dependencies {
     compile "commons-io:commons-io:${commonsIOVersion}"
     compile "org.apache.commons:commons-lang3:${commonsLang3Version}"
     compile "commons-logging:commons-logging:${logVersion}"
+    compile "commons-codec:commons-codec:${codecVersion}"
 
 
     testCompile "junit:junit:${junitVersion}"

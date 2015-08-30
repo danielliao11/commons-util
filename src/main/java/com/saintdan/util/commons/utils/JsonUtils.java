@@ -20,7 +20,7 @@ import java.util.Map;
  * @date 4/9/15
  * @since JDK1.8
  */
-public final class JsonUtil {
+public final class JsonUtils {
 
     private static ObjectMapper objectMapper = new ObjectMapper();
     private static XmlMapper xmlMapper = new XmlMapper();

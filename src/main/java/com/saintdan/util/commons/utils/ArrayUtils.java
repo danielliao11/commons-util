@@ -10,9 +10,9 @@ import java.util.Arrays;
  * @date 3/31/15
  * @since JDK1.8
  */
-public final class ArrayUtil {
+public final class ArrayUtils {
 
-    private ArrayUtil() {
+    private ArrayUtils() {
     }
 
     /**

@@ -17,7 +17,7 @@ import java.util.Map;
  * @date 4/16/15
  * @since JDK1.8
  */
-public class CharsetUtil extends CharSetUtils{
+public class CharsetUtils extends CharSetUtils{
     /**
      * 16-bit UTF (UCS Transformation Format) whose byte order is identified by
      * an optional byte-order mark
@@ -50,7 +50,7 @@ public class CharsetUtil extends CharSetUtils{
      */
     public static final Charset US_ASCII = Charset.forName("US-ASCII");
 
-    private CharsetUtil() {
+    private CharsetUtils() {
 
     }
 

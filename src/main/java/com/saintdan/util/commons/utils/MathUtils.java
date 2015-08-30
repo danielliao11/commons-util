@@ -20,7 +20,7 @@ import java.math.BigDecimal;
  * @date 4/1/15
  * @since JDK1.8
  */
-public final class MathUtil {
+public final class MathUtils {
 
     /**
      * Default precision.
@@ -31,7 +31,7 @@ public final class MathUtil {
      */
     private static final int ROUNDING_MODE = BigDecimal.ROUND_HALF_UP;
 
-    private MathUtil() {
+    private MathUtils() {
     }
 
     // High-precision calculation

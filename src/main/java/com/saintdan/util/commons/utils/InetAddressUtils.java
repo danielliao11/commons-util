@@ -10,9 +10,9 @@ import java.net.UnknownHostException;
  * @date 4/13/15
  * @since JDK1.8
  */
-public class InetAddressUtil {
+public class InetAddressUtils {
 
-    private InetAddressUtil() {
+    private InetAddressUtils() {
         super();
     }
 

@@ -7,7 +7,7 @@ package com.saintdan.util.commons.utils;
  * @date 4/13/15
  * @since JDK1.8
  */
-public final class ByteUtil {
+public final class ByteUtils {
 
     private static final char[] HEX =
         {
@@ -15,7 +15,7 @@ public final class ByteUtil {
             '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'
         };
 
-    private ByteUtil() {
+    private ByteUtils() {
         super();
     }
 

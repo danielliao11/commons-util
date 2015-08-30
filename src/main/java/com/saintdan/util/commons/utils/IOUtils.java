@@ -10,8 +10,8 @@ import org.apache.commons.io.IOUtils;
  * @since JDK1.8
  * @since COMMONS-IO 2.4
  */
-public class IOUtil extends IOUtils{
-    private IOUtil(){
+public class IOUtils extends org.apache.commons.io.IOUtils {
+    private IOUtils(){
 
     }
 }

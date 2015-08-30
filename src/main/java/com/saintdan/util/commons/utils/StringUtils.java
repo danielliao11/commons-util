@@ -1,7 +1,5 @@
 package com.saintdan.util.commons.utils;
 
-import org.apache.commons.lang3.StringUtils;
-
 /**
  * Some String utilities.
  *
@@ -9,7 +7,7 @@ import org.apache.commons.lang3.StringUtils;
  * @date 4/2/15
  * @since JDK1.8
  */
-public class StringUtil extends StringUtils{
+public class StringUtils extends org.apache.commons.lang3.StringUtils {
 
     /**
      * Blank validation

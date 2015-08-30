@@ -20,21 +20,22 @@ import java.security.spec.AlgorithmParameterSpec;
  * @date 4/13/15
  * @since JDK1.8
  */
-public class EncryptionUtil {
+public class EncryptionUtils {
 
-    private EncryptionUtil() {
+    private EncryptionUtils() {
 
     }
 
     /**
      * Encrypt string content.
+     *
      * @param key     encrypt key
      * @param content src
      * @return        encrypted content
      */
     public static String encrypt(String key, String content) {
         try {
-            return ByteUtil.encode(createAesEncryptionCipher(key).doFinal(content.getBytes()));
+            return ByteUtils.encode(createAesEncryptionCipher(key).doFinal(content.getBytes()));
         } catch (Exception e) {
             throw new IllegalStateException("Error occurred encrypting data", e);
         }
@@ -42,13 +43,14 @@ public class EncryptionUtil {
 
     /**
      * Encrypt byte[] content.
+     *
      * @param key       encrypt key
      * @param content   src
      * @return          encrypted content
      */
     public static String encryptBytes(String key, byte[] content) {
         try {
-            return ByteUtil.encode(createAesEncryptionCipher(key).doFinal(content));
+            return ByteUtils.encode(createAesEncryptionCipher(key).doFinal(content));
         } catch (Exception e) {
             throw new IllegalStateException("Error occurred encrypting data", e);
         }
@@ -56,13 +58,14 @@ public class EncryptionUtil {
 
     /**
      * Decrypt HEX string.
+     *
      * @param key       decrypt key
      * @param hexStr    src
      * @return          decrypted string
      */
     public static String decrypt(String key, String hexStr) {
         try {
-            return new String(createAesDecryptionCipher(key).doFinal(ByteUtil.decode(hexStr)));
+            return new String(createAesDecryptionCipher(key).doFinal(ByteUtils.decode(hexStr)));
         } catch (Exception e) {
             throw new IllegalStateException("Error occurred decrypting data", e);
         }
@@ -70,13 +73,14 @@ public class EncryptionUtil {
 
     /**
      * Decrypt bytes.
+     *
      * @param key       decrypt key
      * @param hexStr    src
      * @return          decrypted byte[]
      */
     public static byte[] decryptBytes(String key, String hexStr) {
         try {
-            return createAesDecryptionCipher(key).doFinal(ByteUtil.decode(hexStr));
+            return createAesDecryptionCipher(key).doFinal(ByteUtils.decode(hexStr));
         } catch (Exception e) {
             throw new IllegalStateException("Error occurred decrypting data", e);
         }
@@ -84,6 +88,7 @@ public class EncryptionUtil {
 
     /**
      * Calculate a SHA-256 hash string.
+     *
      * @param digest MessageDigest
      * @param bytes  SHA string
      * @return
@@ -93,11 +98,12 @@ public class EncryptionUtil {
             return null;
         }
         digest.update(bytes);
-        return ByteUtil.encode(digest.digest());
+        return ByteUtils.encode(digest.digest());
     }
 
     /**
      * Fast MD5 calculation.
+     *
      * @param  file src
      * @return MD5  string
      */
@@ -109,12 +115,13 @@ public class EncryptionUtil {
         } catch (IOException e) {
             return null;
         } finally {
-            IOUtil.closeQuietly(in);
+            IOUtils.closeQuietly(in);
         }
     }
 
     /**
      * Calculate a MD5 hash string.
+     *
      * @param  channel src
      * @return MD5     string
      * @throws IOException
@@ -134,7 +141,7 @@ public class EncryptionUtil {
             d.update(bb);
             bb.clear();
         }
-        return ByteUtil.encode(d.digest());
+        return ByteUtils.encode(d.digest());
     }
 
     public static String calculateMD5Hash(byte[] bytes) {
@@ -143,6 +150,7 @@ public class EncryptionUtil {
 
     /**
      * Get digest.
+     *
      * @param digest digest of string
      * @return       MessageDigest
      */

@@ -29,9 +29,9 @@ import java.util.Date;
  * @date 4/2/15
  * @since JDK1.8
  */
-public final class ConvertUtil {
+public final class ConvertUtils {
 
-    private ConvertUtil() {
+    private ConvertUtils() {
     }
 
     public static Object convert(Object value, Class targetType) {
@@ -92,7 +92,7 @@ public final class ConvertUtil {
             if (value == null) {
                 return ((Number) value).byteValue();
             } else if (value instanceof String) {
-                if (StringUtil.isBlank((String) value)) {
+                if (StringUtils.isBlank((String) value)) {
                     return (byte) 0;
                 }
                 return Byte.valueOf(((String) value).trim());
@@ -142,7 +142,7 @@ public final class ConvertUtil {
         } else if (value instanceof Number) {
             return ((Number) value).longValue() != 0;
         } else if (value instanceof String) {
-            if (StringUtil.isBlank((String) value)) {
+            if (StringUtils.isBlank((String) value)) {
                 return Boolean.FALSE;
             }
             String string = (String) value;
@@ -167,7 +167,7 @@ public final class ConvertUtil {
             } else if (value instanceof Number) {
                 return ((Number)value).shortValue();
             } else if (value instanceof String) {
-                if (StringUtil.isBlank((String)value)) {
+                if (StringUtils.isBlank((String) value)) {
                     return (short)0;
                 }
                 return Short.valueOf(((String) value).trim());
@@ -196,7 +196,7 @@ public final class ConvertUtil {
             } else if (value instanceof Number) {
                 return ((Number) value).intValue();
             } else if (value instanceof String) {
-                if (StringUtil.isBlank((String) value)) {
+                if (StringUtils.isBlank((String) value)) {
                     return 0;
                 }
                 return Integer.valueOf(((String) value).trim());
@@ -225,7 +225,7 @@ public final class ConvertUtil {
             } else if (value instanceof Number) {
                 return ((Number) value).longValue();
             } else if (value instanceof String) {
-                if (StringUtil.isBlank((String) value)) {
+                if (StringUtils.isBlank((String) value)) {
                     return 0L;
                 }
                 return Long.valueOf(((String) value).trim());
@@ -249,7 +249,7 @@ public final class ConvertUtil {
             } else if (value instanceof BigInteger) {
                 return new BigDecimal((BigInteger) value);
             } else if (value instanceof String) {
-                if (StringUtil.isBlank((String) value)) {
+                if (StringUtils.isBlank((String) value)) {
                     return BigDecimal.ZERO;
                 }
                 return new BigDecimal(((String) value).trim());
@@ -277,7 +277,7 @@ public final class ConvertUtil {
             } else if (value instanceof BigDecimal) {
                 return ((BigDecimal) value).toBigInteger();
             } else if (value instanceof String) {
-                if (StringUtil.isBlank((String) value)) {
+                if (StringUtils.isBlank((String) value)) {
                     return BigInteger.ZERO;
                 }
                 return new BigInteger(((String) value).trim());
@@ -312,7 +312,7 @@ public final class ConvertUtil {
             } else if (value instanceof Number) {
                 return ((Number) value).floatValue();
             } else if (value instanceof String) {
-                if (StringUtil.isBlank((String) value)) {
+                if (StringUtils.isBlank((String) value)) {
                     return 0.0f;
                 }
                 return Float.valueOf(((String) value).trim());
@@ -341,7 +341,7 @@ public final class ConvertUtil {
             } else if (value instanceof Number) {
                 return ((Number) value).doubleValue();
             } else if (value instanceof String) {
-                if (StringUtil.isBlank((String) value)) {
+                if (StringUtils.isBlank((String) value)) {
                     return 0.0d;
                 }
                 return Double.valueOf(((String) value).trim());
