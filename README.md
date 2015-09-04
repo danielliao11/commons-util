@@ -16,7 +16,7 @@ Some useful commons for Java.
 - LogUtils: Some log utilities.
 - StreamUtils: Some stream utilities.
 - SignatureUtils: Signature utilities.
-- JaxbUtils: Jaxb utilities.
+- JaxbUtils: Some Jaxb utilities.
 
 ### Version History:
 - 0.0.1-SNAPSHOT
