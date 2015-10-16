@@ -41,9 +41,6 @@ ext {
 }
 
 dependencies {
-    compile "com.fasterxml.jackson.core:jackson-core:${jacksonVersion}"
-    compile "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
-    compile "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:${jacksonDataformatVersion}"
     compile "commons-io:commons-io:${commonsIOVersion}"
     compile "org.apache.commons:commons-lang3:${commonsLang3Version}"
     compile "commons-logging:commons-logging:${logVersion}"

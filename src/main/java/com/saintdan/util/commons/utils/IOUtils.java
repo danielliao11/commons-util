@@ -1,7 +1,5 @@
 package com.saintdan.util.commons.utils;
 
-import org.apache.commons.io.IOUtils;
-
 /**
  * Extends commons-io.
  *
